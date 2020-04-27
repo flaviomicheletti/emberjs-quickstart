@@ -1,57 +1,95 @@
-# emberjs-quickstart
+![](ember-logo.png)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# Emberjs quikstart
 
-## Prerequisites
+https://guides.emberjs.com/release/getting-started/quick-start/
 
-You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+Install global
 
-## Installation
+    npm install -g ember-cli
 
-* `git clone <repository-url>` this repository
-* `cd emberjs-quickstart`
-* `npm install`
+### Create a New Application
 
-## Running / Development
+    ember new [name]    
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+    // my example
+    cd your-projects/
+    ember new ember-quickstart
 
-### Code Generators
+    // your-projects/ember-quickstart
 
-Make use of the many generators for code, try `ember help generate` for more details
+Output...
 
-### Running Tests
+    ember new emberjs-quickstart
+    installing app
+    Ember CLI v3.17.0
 
-* `ember test`
-* `ember test --server`
+    Creating a new Ember app in C:\Users\flavi\Documents\codes-mygit\emberjs-quickstart:
+    create .editorconfig
+    create .ember-cli
+    create .eslintignore
+    create .eslintrc.js
+    create .template-lintrc.js
+    create .travis.yml
+    create .watchmanconfig
+    create README.md
+    create app\app.js
+    create app\components\.gitkeep
+    create app\controllers\.gitkeep
+    create app\helpers\.gitkeep
+    create app\index.html
+    create app\models\.gitkeep
+    create app\router.js
+    create app\routes\.gitkeep
+    create app\styles\app.css
+    create app\templates\application.hbs
+    create config\environment.js
+    create config\optional-features.json
+    create config\targets.js
+    create ember-cli-build.js
+    create .gitignore
+    create package.json
+    create public\robots.txt
+    create testem.js
+    create tests\helpers\.gitkeep
+    create tests\index.html
+    create tests\integration\.gitkeep
+    create tests\test-helper.js
+    create tests\unit\.gitkeep
+    create vendor\.gitkeep
 
-### Linting
+    Installing packages... This might take a couple of minutes.
+    npm: Installed dependencies
 
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+    Initializing git repository.
+    Git: successfully initialized.
 
-### Building
+    Successfully created project emberjs-quickstart.
+    Get started by typing:
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+    $ cd emberjs-quickstart
+    $ npm start
 
-### Deploying
+    Happy coding!
 
-Specify what it takes to deploy your app.
 
-## Further Reading / Useful Links
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### Start the development server
+
+ ember serve
+
+    Running without permission to symlink will degrade build performance.
+    See https://cli.emberjs.com/release/appendix/windows/ for details.
+
+
+    Build successful (20018ms) – Serving on http://localhost:4200/
+
+    Slowest Nodes (totalTime >= 5%)                                                                                                            | Total (avg)
+    -------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------
+    Babel: @ember/test-helpers (2)                                                                                                             | 3775ms (1887 ms)
+    BroccoliMergeTrees (17)                                                                                                                    | 2185ms (128 ms)
+    Babel: @ember-data/store (2)                                                                                                               | 1518ms (759 ms)
+    BroccoliRollup (6)                                                                                                                         | 1438ms (239 ms)
+
+![](start-server.png)
